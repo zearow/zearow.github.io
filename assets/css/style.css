@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Comfortaa-Medium';
+    src: url('/assets/fonts/Comfortaa-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('/assets/fonts/Comfortaa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-SemiBold';
+    src: url('/assets/fonts/Comfortaa-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/assets/fonts/Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url('/assets/fonts/Comfortaa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+}
+
+::selection {
+    text-shadow: none;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    background-color: #333333;
+    color: white;
+
+    font-family: Comfortaa,sans-serif;
+    font-size: 16px;
+
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    font-family: Comfortaa-SemiBold, sans-serif;
+    margin: 5px 0 15px 0;
+}
+
+p {
+    font-family: Comfortaa-Light, sans-serif;
+    line-height: 2em;
+    margin: 5px 0 15px 0;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #333333;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Comfortaa-Light, sans-serif;
+    font-size: 0.9em;
+}
+
+section {
+    margin: 25px 0 25px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+.logo {
+    height: 120px;
+    margin: 25px 0 25px 0;
+}
+
+.zerow {
+    height: 9px;
+}
+
+footer .zerow {
+    height: 11px;
+}
+
+a.button {
+
+    display: inline-block;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 1em;
+    font-family: Comfortaa, sans-serif;
+    cursor: pointer;
+}
+
+a.button:hover {
+    background-color: white;
+    color: #333333;
+}
