@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@source "../../../content/**/*";
+
+@theme {
+  --font-sans: "Comfortaa", sans-serif;
+  --color-primary-50: #EFF5F8;
+  --color-primary-100: #D7E7EF;
+  --color-primary-200: #B0CFE0;
+  --color-primary-300: #80B1CC;
+  --color-primary-400: #4A7C9B;
+  --color-primary-500: #3A6A87;
+  --color-primary-600: #2E5570;
+  --color-primary-700: #234259;
+  --color-primary-800: #1A3143;
+  --color-primary-900: #12222F;
+  --color-primary-950: #0A1620;
+}
+
+:root {
+  --ui-bg: #ffffff;
+  --ui-text: #333333;
+  --ui-text-highlighted: #1a1a1a;
+  --ui-color-primary-50: #EFF5F8;
+  --ui-color-primary-100: #D7E7EF;
+  --ui-color-primary-200: #B0CFE0;
+  --ui-color-primary-300: #80B1CC;
+  --ui-color-primary-400: #4A7C9B;
+  --ui-color-primary-500: #3A6A87;
+  --ui-color-primary-600: #2E5570;
+  --ui-color-primary-700: #234259;
+  --ui-color-primary-800: #1A3143;
+  --ui-color-primary-900: #12222F;
+  --ui-color-primary-950: #0A1620;
+}
+
+.dark {
+  --ui-bg: #1a1a1a;
+  --ui-text: #e3e3e3;
+  --ui-text-highlighted: #ffffff;
+}
+
+/* Dotted background pattern that scrolls with the page */
+body {
+  position: relative;
+  background-image: radial-gradient(circle, rgba(74, 124, 155, 0.2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Hero titles — consistent size across all pages, slightly bigger on mobile */
+h1[data-slot="title"] {
+  font-size: 2.25rem !important; /* text-4xl on mobile */
+  line-height: 1.1 !important;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+@media (min-width: 640px) {
+  h1[data-slot="title"] {
+    font-size: 3rem !important; /* text-5xl on sm+ */
+  }
+}
+@media (min-width: 1024px) {
+  h1[data-slot="title"] {
+    font-size: 3.75rem !important; /* text-6xl on lg+ */
+  }
+}
+
+/* Sharp corners on UPageCTA boxes (the only Nuxt UI section component with rounded-xl on root) */
+[data-slot="root"].rounded-xl {
+  border-radius: 0;
+}
+
+/* On mobile, when a UPageSection default slot is an image, show the image before the text wrapper */
+@media (max-width: 1023px) {
+  section[data-slot="root"] > [data-slot="container"]:has(> img) > [data-slot="wrapper"] {
+    order: 99;
+  }
+}
+
+/* Header scroll states */
+header[data-slot="root"] {
+  transition: background-color 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+}
+
+html body header[data-slot="root"].header-top {
+  background-color: transparent !important;
+  background: transparent !important;
+  border-bottom-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Page transition */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease;
+}
+.page-enter-from,
+.page-leave-to { opacity: 0; }
+
+/* Back to top / captcha fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to { opacity: 0; }
