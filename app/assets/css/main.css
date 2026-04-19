@@ -87,8 +87,13 @@ html body header[data-slot="root"].header-top {
   background-color: transparent !important;
   background: transparent !important;
   border-bottom-color: transparent !important;
-  backdrop-filter: none !important;
+  --tw-backdrop-blur: ;
+}
+html body header[data-slot="root"].header-top {
   -webkit-backdrop-filter: none !important;
+}
+html body header[data-slot="root"].header-top {
+  backdrop-filter: none !important;
 }
 
 /* Page transition */
