@@ -12,7 +12,14 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' },
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }
+      ],
+      meta: [
+        { name: 'apple-mobile-web-app-title', content: 'zearøw' },
+        { name: 'apple-mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
+        { name: 'theme-color', content: '#4A7C9B' }
       ]
     }
   },
