@@ -70,7 +70,7 @@ useHead({
         </UContainer>
       </template>
       <template #default>
-        <img v-if="heroImage" :src="heroImage" :alt="post.badge" class="w-full max-w-xs mx-auto" />
+        <img v-if="heroImage" :src="heroImage" :alt="post.badge" width="800" height="800" class="w-full h-auto max-w-xs mx-auto" />
       </template>
       <template #headline>
         <UBadge v-if="post.badge" :label="post.badge" color="primary" />

@@ -163,7 +163,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       <UPageSection :ui="{ root: '!pt-0', container: '!pt-0' }">
         <!-- Success state -->
         <div v-if="submitted" class="text-center py-16">
-          <img src="/undraw_message-sent_iyz6.svg" alt="Message sent" class="w-full max-w-xs mx-auto mb-8" />
+          <img src="/undraw_message-sent_iyz6.svg" alt="Message sent" width="670" height="800" class="w-full h-auto max-w-xs mx-auto mb-8" />
           <h2 class="text-2xl font-bold text-(--ui-text-highlighted)">Thank you for reaching out!</h2>
           <p class="mt-3 text-(--ui-text-muted) max-w-md mx-auto">
             <template v-if="state.reason === 'Interested in SaaS products'">

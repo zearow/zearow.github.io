@@ -31,8 +31,13 @@ export default defineNuxtConfig({
   },
   fonts: {
     families: [
-      { name: 'Comfortaa', provider: 'google', weights: [300, 400, 500, 600, 700] }
-    ]
+      { name: 'Comfortaa', provider: 'google', weights: [300, 400, 500, 600, 700], preload: true }
+    ],
+    defaults: {
+      fallbacks: {
+        'sans-serif': ['Comfortaa', 'system-ui', 'sans-serif']
+      }
+    }
   },
   vite: {
     optimizeDeps: {

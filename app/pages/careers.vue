@@ -52,7 +52,7 @@ const values = [
         :features="values"
         orientation="horizontal"
       >
-        <img src="/undraw_team-spirit_18vw.svg" alt="Team spirit" class="w-full max-w-md mx-auto" />
+        <img src="/undraw_team-spirit_18vw.svg" alt="Team spirit" width="873" height="590" class="w-full h-auto max-w-md mx-auto" />
       </UPageSection>
     </ScrollReveal>
 

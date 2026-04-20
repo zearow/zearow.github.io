@@ -7,12 +7,17 @@ function getColor() {
   return colorMode.value === 'dark' ? '#80B1CC' : '#4A7C9B'
 }
 
+function isMobileViewport() {
+  return window.matchMedia('(max-width: 767px)').matches
+}
+
 function getConfig() {
+  const mobile = isMobileViewport()
   return {
     particles: {
       number: {
-        value: 100,
-        density: { enable: true, value_area: 900 }
+        value: mobile ? 30 : 100,
+        density: { enable: true, value_area: mobile ? 1200 : 900 }
       },
       color: { value: getColor() },
       shape: {
@@ -21,23 +26,23 @@ function getConfig() {
       opacity: {
         value: 0.2,
         random: true,
-        anim: { enable: true, speed: 0.5, opacity_min: 0.05, sync: false }
+        anim: { enable: !mobile, speed: 0.5, opacity_min: 0.05, sync: false }
       },
       size: {
         value: 10,
         random: true,
-        anim: { enable: true, speed: 1, size_min: 1, sync: false }
+        anim: { enable: !mobile, speed: 1, size_min: 1, sync: false }
       },
       line_linked: {
         enable: true,
-        distance: 160,
+        distance: mobile ? 120 : 160,
         color: getColor(),
         opacity: 0.2,
         width: 1
       },
       move: {
         enable: true,
-        speed: 1.2,
+        speed: mobile ? 0.6 : 1.2,
         direction: 'none',
         random: true,
         straight: false,
@@ -57,7 +62,7 @@ function getConfig() {
         push: { particles_nb: 3 }
       }
     },
-    retina_detect: true
+    retina_detect: !mobile
   }
 }
 
@@ -97,10 +102,25 @@ function loadScript() {
   })
 }
 
-onMounted(async () => {
-  await loadScript()
-  await nextTick()
-  initParticles()
+function shouldSkip() {
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches
+}
+
+function deferred(cb: () => void) {
+  if ('requestIdleCallback' in window) {
+    (window as any).requestIdleCallback(cb, { timeout: 2000 })
+  } else {
+    setTimeout(cb, 1000)
+  }
+}
+
+onMounted(() => {
+  if (shouldSkip()) return
+  deferred(async () => {
+    await loadScript()
+    await nextTick()
+    initParticles()
+  })
 })
 
 watch(() => colorMode.value, () => {

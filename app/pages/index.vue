@@ -64,7 +64,7 @@ const services = [
         :ui="{ root: '!pt-0', container: '!pt-0' }"
         orientation="horizontal"
       >
-        <img src="/undraw_work-in-progress_m95a.svg" alt="Built on three pillars" class="w-full max-w-md mx-auto" />
+        <img src="/undraw_work-in-progress_m95a.svg" alt="Built on three pillars" width="734" height="800" class="w-full h-auto max-w-md mx-auto" />
       </UPageSection>
     </ScrollReveal>
 
@@ -79,7 +79,7 @@ const services = [
         reverse
       >
         <template #default>
-          <img src="/undraw_thought-process_ze2r.svg" alt="What we do" class="w-full max-w-md mx-auto" />
+          <img src="/undraw_thought-process_ze2r.svg" alt="What we do" width="800" height="600" class="w-full h-auto max-w-md mx-auto" />
         </template>
         <template #body>
           <div class="grid gap-4">

@@ -89,7 +89,7 @@ const reasons: PageFeatureProps[] = [
         orientation="horizontal"
         reverse
       >
-        <img src="/undraw_omega_aj2q.svg" alt="Our philosophy" class="w-full max-w-md mx-auto" />
+        <img src="/undraw_omega_aj2q.svg" alt="Our philosophy" width="975" height="769" class="w-full h-auto max-w-md mx-auto" />
       </UPageSection>
     </ScrollReveal>
 
@@ -123,7 +123,7 @@ const reasons: PageFeatureProps[] = [
         :features="reasons"
         orientation="horizontal"
       >
-        <img src="/undraw_choose_5kz4.svg" alt="Why choose us" class="w-full max-w-md mx-auto" />
+        <img src="/undraw_choose_5kz4.svg" alt="Why choose us" width="800" height="482" class="w-full h-auto max-w-md mx-auto" />
       </UPageSection>
     </ScrollReveal>
 
@@ -135,7 +135,7 @@ const reasons: PageFeatureProps[] = [
         orientation="horizontal"
         reverse
       >
-        <img src="/undraw_team-work_i1f3.svg" alt="Our team" class="w-full max-w-md mx-auto" />
+        <img src="/undraw_team-work_i1f3.svg" alt="Our team" width="1037" height="758" class="w-full h-auto max-w-md mx-auto" />
       </UPageSection>
     </ScrollReveal>
 

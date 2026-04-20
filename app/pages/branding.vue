@@ -79,7 +79,7 @@ const pairings = [
         <div class="grid sm:grid-cols-3 gap-4">
           <UCard v-for="logo in logos" :key="logo.label" :ui="{ body: 'p-0', root: 'overflow-hidden hover:bg-elevated/50 hover:ring-primary-400 transition-all' }">
             <div :class="[logo.bg, 'h-32 flex items-center justify-center px-8']">
-              <img :src="logo.src" :alt="logo.label" class="max-h-8 w-auto" />
+              <img :src="logo.src" :alt="logo.label" width="128" height="32" class="max-h-8 w-auto" />
             </div>
             <template #footer>
               <p class="text-sm font-semibold text-(--ui-text-highlighted)">{{ logo.label }}</p>
@@ -92,7 +92,7 @@ const pairings = [
         <div class="grid sm:grid-cols-3 gap-4">
           <UCard :ui="{ body: 'p-0', root: 'overflow-hidden' }">
             <div class="h-32 flex items-center justify-center px-8 bg-primary-400">
-              <img src="/logo-white.svg" alt="Logo on Steel Blue" class="max-h-8 w-auto" />
+              <img src="/logo-white.svg" alt="Logo on Steel Blue" width="128" height="32" class="max-h-8 w-auto" />
             </div>
             <template #footer>
               <p class="text-sm font-semibold text-(--ui-text-highlighted)">On Steel Blue</p>
@@ -108,7 +108,7 @@ const pairings = [
           </UCard>
           <UCard :ui="{ body: 'p-0', root: 'overflow-hidden' }">
             <div class="h-32 flex items-center justify-center px-8" style="background: #1A1A1A">
-              <img src="/logo-white.svg" alt="Logo on dark" class="max-h-8 w-auto" />
+              <img src="/logo-white.svg" alt="Logo on dark" width="128" height="32" class="max-h-8 w-auto" />
             </div>
             <template #footer>
               <p class="text-sm font-semibold text-(--ui-text-highlighted)">On Dark</p>

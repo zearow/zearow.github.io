@@ -87,7 +87,7 @@ const services = [
           />
 
           <div class="order-first sm:order-none sm:col-span-2 lg:col-span-1 lg:row-span-2 flex items-center justify-center p-8 rounded-xl border border-(--ui-border) bg-(--ui-bg-muted)">
-            <img src="/undraw_deliveries_qutl.svg" alt="Our services" class="w-full max-w-xs" />
+            <img src="/undraw_deliveries_qutl.svg" alt="Our services" width="800" height="453" class="w-full h-auto max-w-xs" />
           </div>
 
           <UPageCard
