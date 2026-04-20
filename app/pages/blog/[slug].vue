@@ -25,6 +25,33 @@ useSeoMeta({
   ogImage: post.value.image || '/og-image.png',
   twitterCard: 'summary_large_image'
 })
+
+const postUrl = `https://zearow.com/blog/${route.params.slug}`
+const postImage = post.value.image
+  ? `https://zearow.com${post.value.image}`
+  : heroImage.value
+    ? `https://zearow.com${heroImage.value}`
+    : 'https://zearow.com/og-image.png'
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: post.value.title,
+        description: post.value.description,
+        datePublished: post.value.date,
+        image: postImage,
+        author: { '@id': 'https://zearow.com/#organization' },
+        publisher: { '@id': 'https://zearow.com/#organization' },
+        url: postUrl,
+        mainEntityOfPage: postUrl
+      })
+    }
+  ]
+})
 </script>
 
 <template>

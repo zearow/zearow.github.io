@@ -27,6 +27,36 @@ function onScroll() {
   scrolled.value = window.scrollY > 20
 }
 
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'Organization',
+            '@id': 'https://zearow.com/#organization',
+            name: 'zearøw',
+            url: 'https://zearow.com',
+            logo: 'https://zearow.com/logo-graphite.svg',
+            description: 'Custom software solutions centered around people, processes, and technology.'
+          },
+          {
+            '@type': 'WebSite',
+            '@id': 'https://zearow.com/#website',
+            url: 'https://zearow.com',
+            name: 'zearøw',
+            description: 'Your partner in digital transformation.',
+            publisher: { '@id': 'https://zearow.com/#organization' },
+            inLanguage: 'en'
+          }
+        ]
+      })
+    }
+  ]
+})
+
 onMounted(() => {
   window.addEventListener('scroll', onScroll, { passive: true })
   onScroll()
