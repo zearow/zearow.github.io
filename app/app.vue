@@ -92,7 +92,9 @@ onUnmounted(() => {
           light="/logo-graphite.svg"
           dark="/logo-white.svg"
           alt="zearøw"
-          class="h-6"
+          width="103"
+          height="26"
+          class="h-6 w-auto"
         />
       </template>
 
