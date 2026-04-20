@@ -1,10 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'FAQ - zearøw',
-  description: 'Frequently asked questions about our services, process, and approach.',
+  description: 'Answers to common questions: how engagements start, typical project length, technologies we use, what happens after delivery, and pricing.',
   ogTitle: 'FAQ - zearøw',
-  ogDescription: 'Frequently asked questions about our services, process, and approach.',
-  ogImage: '/og-image.png',
+  ogDescription: 'Answers to common questions: how engagements start, typical project length, technologies we use, what happens after delivery, and pricing.',
   twitterCard: 'summary_large_image'
 })
 

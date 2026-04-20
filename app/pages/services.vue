@@ -1,10 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Services - zearøw',
-  description: 'Custom software development, process optimization, and digital transformation services.',
-  ogTitle: 'Services - zearøw',
-  ogDescription: 'Custom software development, process optimization, and digital transformation services.',
-  ogImage: '/og-image.png',
+  title: 'Services - Custom Software & Process Optimization | zearøw',
+  description: 'From process analysis and stakeholder mapping to custom software and KPI tracking — end-to-end services to align technology with your business.',
+  ogTitle: 'Services - Custom Software & Process Optimization | zearøw',
+  ogDescription: 'From process analysis and stakeholder mapping to custom software and KPI tracking — end-to-end services to align technology with your business.',
   twitterCard: 'summary_large_image'
 })
 

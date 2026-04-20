@@ -1,10 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Products - zearøw',
-  description: 'Our suite of SaaS applications — coming soon.',
-  ogTitle: 'Products - zearøw',
-  ogDescription: 'Our suite of SaaS applications — coming soon.',
-  ogImage: '/og-image.png',
+  title: 'Products - SaaS Applications Coming Soon | zearøw',
+  description: "We're packaging the patterns we've refined through years of custom engagements into ready-to-use SaaS products. Be first in line when we launch.",
+  ogTitle: 'Products - SaaS Applications Coming Soon | zearøw',
+  ogDescription: "We're packaging the patterns we've refined through years of custom engagements into ready-to-use SaaS products. Be first in line when we launch.",
   twitterCard: 'summary_large_image'
 })
 </script>

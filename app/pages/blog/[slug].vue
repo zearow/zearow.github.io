@@ -17,21 +17,22 @@ if (!post.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found' })
 }
 
-useSeoMeta({
-  title: `${post.value.title} - zearøw`,
-  description: post.value.description,
-  ogTitle: `${post.value.title} - zearøw`,
-  ogDescription: post.value.description,
-  ogImage: post.value.image || '/og-image.png',
-  twitterCard: 'summary_large_image'
-})
-
 const postUrl = `https://zearow.com/blog/${route.params.slug}`
 const postImage = post.value.image
   ? `https://zearow.com${post.value.image}`
   : heroImage.value
     ? `https://zearow.com${heroImage.value}`
     : 'https://zearow.com/og-image.png'
+
+useSeoMeta({
+  title: `${post.value.title} - zearøw`,
+  description: post.value.description,
+  ogTitle: `${post.value.title} - zearøw`,
+  ogDescription: post.value.description,
+  ogImage: postImage,
+  ogType: 'article',
+  twitterCard: 'summary_large_image'
+})
 
 useHead({
   script: [

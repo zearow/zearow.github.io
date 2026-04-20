@@ -1,10 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Careers - zearøw',
-  description: 'Join the zearøw team. We are always looking for talented people who share our passion for digital transformation.',
-  ogTitle: 'Careers - zearøw',
-  ogDescription: 'Join the zearøw team. We are always looking for talented people who share our passion for digital transformation.',
-  ogImage: '/og-image.png',
+  title: 'Careers - Join the zearøw Team',
+  description: 'Remote-friendly, outcome-focused, people-first. We hire smart engineers and designers who care more about impact than hours logged.',
+  ogTitle: 'Careers - Join the zearøw Team',
+  ogDescription: 'Remote-friendly, outcome-focused, people-first. We hire smart engineers and designers who care more about impact than hours logged.',
   twitterCard: 'summary_large_image'
 })
 

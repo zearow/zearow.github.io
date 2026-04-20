@@ -5,11 +5,10 @@ const VueHcaptcha = defineAsyncComponent(() => import('@hcaptcha/vue3-hcaptcha')
 const colorMode = useColorMode()
 
 useSeoMeta({
-  title: 'Contact - zearøw',
-  description: 'Get in touch with zearøw to discuss your digital transformation needs.',
-  ogTitle: 'Contact - zearøw',
-  ogDescription: 'Get in touch with zearøw to discuss your digital transformation needs.',
-  ogImage: '/og-image.png',
+  title: 'Contact zearøw - Start Your Project',
+  description: 'Tell us about your project, ask about careers, or send a partnership inquiry. Every message is read by a real person on our team within 1-2 days.',
+  ogTitle: 'Contact zearøw - Start Your Project',
+  ogDescription: 'Tell us about your project, ask about careers, or send a partnership inquiry. Every message is read by a real person on our team within 1-2 days.',
   twitterCard: 'summary_large_image'
 })
 

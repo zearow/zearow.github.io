@@ -3,10 +3,9 @@ import type { PageFeatureProps, ButtonProps } from '@nuxt/ui'
 
 useSeoMeta({
   title: 'zearøw - Your Partner in Digital Transformation',
-  description: 'Custom software solutions centered around people, processes, and technology.',
+  description: 'We build custom software that fits your processes — not the other way around. People-first digital transformation for growing businesses.',
   ogTitle: 'zearøw - Your Partner in Digital Transformation',
-  ogDescription: 'Custom software solutions centered around people, processes, and technology.',
-  ogImage: '/og-image.png',
+  ogDescription: 'We build custom software that fits your processes — not the other way around. People-first digital transformation for growing businesses.',
   twitterCard: 'summary_large_image'
 })
 

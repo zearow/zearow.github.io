@@ -1,10 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Case Studies - zearøw',
-  description: 'Real-world examples of how zearøw has helped organizations optimize processes, save time, and unlock measurable efficiency gains.',
-  ogTitle: 'Case Studies - zearøw',
-  ogDescription: 'Real-world examples of how zearøw has helped organizations optimize processes, save time, and unlock measurable efficiency gains.',
-  ogImage: '/og-image.png',
+  title: 'Case Studies - Real Results | zearøw',
+  description: "40× faster reports, 80% less manual work, weeks of analyst time saved monthly. See how we've helped real organizations cut waste from their processes.",
+  ogTitle: 'Case Studies - Real Results | zearøw',
+  ogDescription: "40× faster reports, 80% less manual work, weeks of analyst time saved monthly. See how we've helped real organizations cut waste from their processes.",
   twitterCard: 'summary_large_image'
 })
 

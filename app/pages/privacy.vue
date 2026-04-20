@@ -1,10 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Privacy Policy - zearøw',
-  description: 'How zearøw collects, uses, and protects your personal information.',
+  description: "We don't use cookies, tracking, or analytics. Read what data we collect from contact forms, how we use it, and your rights under GDPR.",
   ogTitle: 'Privacy Policy - zearøw',
-  ogDescription: 'How zearøw collects, uses, and protects your personal information.',
-  ogImage: '/og-image.png',
+  ogDescription: "We don't use cookies, tracking, or analytics. Read what data we collect from contact forms, how we use it, and your rights under GDPR.",
   twitterCard: 'summary_large_image'
 })
 

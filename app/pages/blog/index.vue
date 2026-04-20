@@ -1,10 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Blog - zearøw',
-  description: 'Insights on digital transformation, process optimization, and custom software development.',
-  ogTitle: 'Blog - zearøw',
-  ogDescription: 'Insights on digital transformation, process optimization, and custom software development.',
-  ogImage: '/og-image.png',
+  title: 'Blog - Insights on Digital Transformation | zearøw',
+  description: 'Practical guides on custom software, process optimization, stakeholder mapping, and the human side of digital transformation. New posts monthly.',
+  ogTitle: 'Blog - Insights on Digital Transformation | zearøw',
+  ogDescription: 'Practical guides on custom software, process optimization, stakeholder mapping, and the human side of digital transformation. New posts monthly.',
   twitterCard: 'summary_large_image'
 })
 

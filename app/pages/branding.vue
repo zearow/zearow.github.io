@@ -1,10 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Brand Guidelines - zearøw',
-  description: 'Our brand identity guidelines — logos, colors, typography, and visual language.',
+  description: 'The zearøw visual identity: logo variants, color palette (Steel Blue, Graphite, White), Comfortaa typography, and design principles.',
   ogTitle: 'Brand Guidelines - zearøw',
-  ogDescription: 'Our brand identity guidelines — logos, colors, typography, and visual language.',
-  ogImage: '/og-image.png',
+  ogDescription: 'The zearøw visual identity: logo variants, color palette (Steel Blue, Graphite, White), Comfortaa typography, and design principles.',
   twitterCard: 'summary_large_image'
 })
 

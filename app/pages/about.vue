@@ -2,11 +2,10 @@
 import type { PageFeatureProps, StepperItem } from '@nuxt/ui'
 
 useSeoMeta({
-  title: 'About - zearøw',
-  description: 'Learn about our approach to digital transformation centered around people, processes, and technology.',
-  ogTitle: 'About - zearøw',
-  ogDescription: 'Learn about our approach to digital transformation centered around people, processes, and technology.',
-  ogImage: '/og-image.png',
+  title: 'About zearøw - People-First Digital Transformation',
+  description: "We're a small team that believes great software starts with understanding the people and processes behind it. Here's how we work.",
+  ogTitle: 'About zearøw - People-First Digital Transformation',
+  ogDescription: "We're a small team that believes great software starts with understanding the people and processes behind it. Here's how we work.",
   twitterCard: 'summary_large_image'
 })
 

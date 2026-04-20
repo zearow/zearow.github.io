@@ -4,7 +4,6 @@ useSeoMeta({
   description: 'Terms and conditions for using the zearøw website and services.',
   ogTitle: 'Terms of Service - zearøw',
   ogDescription: 'Terms and conditions for using the zearøw website and services.',
-  ogImage: '/og-image.png',
   twitterCard: 'summary_large_image'
 })
 

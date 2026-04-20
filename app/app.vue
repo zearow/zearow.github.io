@@ -27,7 +27,19 @@ function onScroll() {
   scrolled.value = window.scrollY > 20
 }
 
+useSeoMeta({
+  ogType: 'website',
+  ogSiteName: 'zearøw',
+  ogLocale: 'en_US',
+  ogUrl: () => `https://zearow.com${route.path}`,
+  ogImage: 'https://zearow.com/og-image.png',
+  twitterCard: 'summary_large_image'
+})
+
 useHead({
+  link: [
+    { rel: 'canonical', href: () => `https://zearow.com${route.path}` }
+  ],
   script: [
     {
       type: 'application/ld+json',
