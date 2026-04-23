@@ -66,7 +66,7 @@ const values = [
             <p class="mt-3 text-(--ui-text-muted) max-w-md mx-auto">
               We don't have any specific openings at the moment, but we're always interested in hearing from talented people. If you think you'd be a great fit, reach out through our contact form.
             </p>
-            <UButton to="/contact?reason=career" label="Get in Touch" size="lg" class="mt-6" />
+            <UButton to="/contact/?reason=career" label="Get in Touch" size="lg" class="mt-6" />
           </div>
         </UContainer>
       </UPageSection>
@@ -78,8 +78,8 @@ const values = [
         title="Not ready to apply?"
         description="Follow our blog to learn more about how we work and what we value. When the right opportunity comes, you'll know."
         :links="[
-          { label: 'Read Our Blog', to: '/blog', size: 'lg' as const, variant: 'outline' as const },
-          { label: 'Learn About Us', to: '/about', size: 'lg' as const, variant: 'outline' as const }
+          { label: 'Read Our Blog', to: '/blog/', size: 'lg' as const, variant: 'outline' as const },
+          { label: 'Learn About Us', to: '/about/', size: 'lg' as const, variant: 'outline' as const }
         ]"
         variant="subtle"
       />

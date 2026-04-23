@@ -144,7 +144,7 @@ const reasons: PageFeatureProps[] = [
       <UPageCTA
         title="Ready to get started?"
         description="Let's collaborate to create solutions that elevate your business."
-        :links="[{ label: 'Contact Us', to: '/contact?reason=service', size: 'lg' as const }]"
+        :links="[{ label: 'Contact Us', to: '/contact/?reason=service', size: 'lg' as const }]"
         variant="subtle"
       />
     </ScrollReveal>

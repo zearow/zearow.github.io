@@ -246,7 +246,7 @@ function clearFilters() {
       <UPageCTA
         title="Ready to transform your business?"
         description="Let's discuss how we can help optimize your processes and build the right technology for your needs."
-        :links="[{ label: 'Get in Touch', to: '/contact?reason=service', size: 'lg' as const }]"
+        :links="[{ label: 'Get in Touch', to: '/contact/?reason=service', size: 'lg' as const }]"
         variant="subtle"
       />
     </ScrollReveal>

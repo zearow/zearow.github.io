@@ -5,20 +5,20 @@ const route = useRoute()
 
 const items = computed<NavigationMenuItem[]>(() => [
   { label: 'Home', to: '/', active: route.path === '/' },
-  { label: 'About', to: '/about', active: route.path === '/about' },
-  { label: 'Services', to: '/services', active: route.path === '/services' },
-  { label: 'Products', to: '/products', active: route.path === '/products' },
-  { label: 'Case Studies', to: '/case-studies', active: route.path === '/case-studies' },
-  { label: 'Blog', to: '/blog', active: route.path.startsWith('/blog') },
-  { label: 'Contact', to: '/contact', active: route.path === '/contact' }
+  { label: 'About', to: '/about/', active: route.path === '/about/' },
+  { label: 'Services', to: '/services/', active: route.path === '/services/' },
+  { label: 'Products', to: '/products/', active: route.path === '/products/' },
+  { label: 'Case Studies', to: '/case-studies/', active: route.path === '/case-studies/' },
+  { label: 'Blog', to: '/blog/', active: route.path.startsWith('/blog') },
+  { label: 'Contact', to: '/contact/', active: route.path === '/contact/' }
 ])
 
 const footerItems: NavigationMenuItem[] = [
-  { label: 'Careers', to: '/careers' },
-  { label: 'Branding', to: '/branding' },
-  { label: 'FAQ', to: '/faq' },
-  { label: 'Privacy Policy', to: '/privacy' },
-  { label: 'Terms of Service', to: '/terms' }
+  { label: 'Careers', to: '/careers/' },
+  { label: 'Branding', to: '/branding/' },
+  { label: 'FAQ', to: '/faq/' },
+  { label: 'Privacy Policy', to: '/privacy/' },
+  { label: 'Terms of Service', to: '/terms/' }
 ]
 
 const scrolled = ref(false)

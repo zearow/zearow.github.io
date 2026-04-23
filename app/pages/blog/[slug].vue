@@ -66,7 +66,7 @@ useHead({
       <template #top>
         <HeroParticles />
         <UContainer class="relative z-10 pt-4">
-          <UButton to="/blog" icon="i-lucide-arrow-left" label="Back to Blog" variant="link" size="sm" />
+          <UButton to="/blog/" icon="i-lucide-arrow-left" label="Back to Blog" variant="link" size="sm" />
         </UContainer>
       </template>
       <template #default>
@@ -94,8 +94,8 @@ useHead({
         title="Want to learn more?"
         description="Get in touch to discuss how we can help with your digital transformation."
         :links="[
-          { label: 'Contact Us', to: '/contact?reason=service', size: 'lg' as const },
-          { label: 'Back to Blog', to: '/blog', variant: 'outline' as const, size: 'lg' as const }
+          { label: 'Contact Us', to: '/contact/?reason=service', size: 'lg' as const },
+          { label: 'Back to Blog', to: '/blog/', variant: 'outline' as const, size: 'lg' as const }
         ]"
         variant="subtle"
       />

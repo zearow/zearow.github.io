@@ -44,8 +44,8 @@ useSeoMeta({
             </p>
 
             <div class="mt-8 flex justify-center gap-3">
-              <UButton to="/contact?reason=saas" label="Notify Me" size="lg" />
-              <UButton to="/services" label="See Our Services" size="lg" variant="outline" />
+              <UButton to="/contact/?reason=saas" label="Notify Me" size="lg" />
+              <UButton to="/services/" label="See Our Services" size="lg" variant="outline" />
             </div>
           </div>
         </UContainer>

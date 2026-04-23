@@ -108,7 +108,7 @@ const services = [
       <UPageCTA
         title="Continuous Improvement"
         description="Our engagement doesn't end at delivery. We provide ongoing process monitoring, refinement, and adaptation to changing business needs — ensuring that your technology and processes remain aligned with evolving goals."
-        :links="[{ label: 'Discuss Your Project', to: '/contact?reason=service', size: 'lg' as const }]"
+        :links="[{ label: 'Discuss Your Project', to: '/contact/?reason=service', size: 'lg' as const }]"
         variant="subtle"
       />
     </ScrollReveal>

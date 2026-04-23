@@ -178,8 +178,8 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             In the meantime, feel free to explore our services or read our latest insights on the blog.
           </p>
           <div class="mt-6 flex justify-center gap-3">
-            <UButton to="/services" variant="outline" label="Explore Services" />
-            <UButton to="/blog" variant="outline" label="Read Our Blog" />
+            <UButton to="/services/" variant="outline" label="Explore Services" />
+            <UButton to="/blog/" variant="outline" label="Read Our Blog" />
           </div>
         </div>
 

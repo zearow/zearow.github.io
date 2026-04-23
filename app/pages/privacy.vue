@@ -121,11 +121,11 @@ const sections = [
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <UCard :ui="{ root: 'hover:bg-elevated/50 hover:ring-primary-400 transition-all' }">
                 <h3 class="font-semibold text-(--ui-text-highlighted) text-sm">Questions</h3>
-                <p class="mt-2 text-sm text-(--ui-text-muted)">If you have questions about this privacy policy or how we handle your data, please <NuxtLink to="/contact?reason=privacy" class="text-primary-400 underline">contact us</NuxtLink>.</p>
+                <p class="mt-2 text-sm text-(--ui-text-muted)">If you have questions about this privacy policy or how we handle your data, please <NuxtLink to="/contact/?reason=privacy" class="text-primary-400 underline">contact us</NuxtLink>.</p>
               </UCard>
               <UCard :ui="{ root: 'hover:bg-elevated/50 hover:ring-primary-400 transition-all' }">
                 <h3 class="font-semibold text-(--ui-text-highlighted) text-sm">Data Requests</h3>
-                <p class="mt-2 text-sm text-(--ui-text-muted)">For access, correction, or deletion requests, <NuxtLink to="/contact?reason=privacy" class="text-primary-400 underline">reach out to us</NuxtLink>. We will respond within 30 days.</p>
+                <p class="mt-2 text-sm text-(--ui-text-muted)">For access, correction, or deletion requests, <NuxtLink to="/contact/?reason=privacy" class="text-primary-400 underline">reach out to us</NuxtLink>. We will respond within 30 days.</p>
               </UCard>
             </div>
           </div>

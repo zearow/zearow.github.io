@@ -152,7 +152,7 @@ const caseStudies = [
       <UPageCTA
         title="Have a similar challenge?"
         description="Let's discuss how we can help you achieve measurable efficiency gains in your organization."
-        :links="[{ label: 'Get in Touch', to: '/contact?reason=service', size: 'lg' as const }]"
+        :links="[{ label: 'Get in Touch', to: '/contact/?reason=service', size: 'lg' as const }]"
         variant="subtle"
       />
     </ScrollReveal>

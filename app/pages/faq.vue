@@ -76,7 +76,7 @@ const items = [
       <UPageCTA
         title="Still have questions?"
         description="We're happy to help. Reach out and we'll get back to you within 1-2 business days."
-        :links="[{ label: 'Contact Us', to: '/contact?reason=service', size: 'lg' as const }]"
+        :links="[{ label: 'Contact Us', to: '/contact/?reason=service', size: 'lg' as const }]"
         variant="subtle"
       />
     </ScrollReveal>

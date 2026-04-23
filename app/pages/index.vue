@@ -10,8 +10,8 @@ useSeoMeta({
 })
 
 const heroLinks: ButtonProps[] = [
-  { label: 'Get in Touch', to: '/contact?reason=service', size: 'xl' },
-  { label: 'Our Services', to: '/services', size: 'xl', variant: 'outline' }
+  { label: 'Get in Touch', to: '/contact/?reason=service', size: 'xl' },
+  { label: 'Our Services', to: '/services/', size: 'xl', variant: 'outline' }
 ]
 
 const pillars: PageFeatureProps[] = [
@@ -74,7 +74,7 @@ const services = [
       <UPageSection
         headline="Expertise"
         title="What We Do"
-        :links="[{ label: 'View All Services', to: '/services', variant: 'outline' as const, size: 'lg' as const }]"
+        :links="[{ label: 'View All Services', to: '/services/', variant: 'outline' as const, size: 'lg' as const }]"
         orientation="horizontal"
         reverse
       >
@@ -103,7 +103,7 @@ const services = [
       <UPageCTA
         title="Let's Transform Together"
         description="Whether you're embarking on a digital transformation journey or seeking a software solution that harmonizes with your processes and people, we're here to guide you."
-        :links="[{ label: 'Contact Us', to: '/contact?reason=service', size: 'lg' as const }]"
+        :links="[{ label: 'Contact Us', to: '/contact/?reason=service', size: 'lg' as const }]"
         variant="subtle"
       />
     </ScrollReveal>
