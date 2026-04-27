@@ -7,8 +7,8 @@ export default defineEventHandler(async (event) => {
 
   const items = posts.map(post => `    <item>
       <title><![CDATA[${post.title}]]></title>
-      <link>${siteUrl}${post.path}</link>
-      <guid>${siteUrl}${post.path}</guid>
+      <link>${siteUrl}${post.path}/</link>
+      <guid>${siteUrl}${post.path}/</guid>
       <description><![CDATA[${post.description}]]></description>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
       ${post.badge ? `<category>${post.badge}</category>` : ''}
@@ -18,7 +18,7 @@ export default defineEventHandler(async (event) => {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>${feedTitle}</title>
-    <link>${siteUrl}/blog</link>
+    <link>${siteUrl}/blog/</link>
     <description>${feedDescription}</description>
     <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>

@@ -224,7 +224,7 @@ function clearFilters() {
                 :badge="post.badge ? { label: post.badge, color: 'primary' } : undefined"
                 :image="post.badge ? badgeImages[post.badge] : undefined"
                 :authors="post.authors"
-                :to="post.path"
+                :to="`${post.path}/`"
                 variant="outline"
                 :ui="{ root: 'hover:ring-primary-400 transition-shadow', image: 'object-contain p-6' }"
               />

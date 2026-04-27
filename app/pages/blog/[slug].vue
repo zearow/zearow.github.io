@@ -17,7 +17,7 @@ if (!post.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found' })
 }
 
-const postUrl = `https://zearow.com/blog/${route.params.slug}`
+const postUrl = `https://zearow.com/blog/${route.params.slug}/`
 const postImage = post.value.image
   ? `https://zearow.com${post.value.image}`
   : heroImage.value

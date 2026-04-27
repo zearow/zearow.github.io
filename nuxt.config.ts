@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/hints', '@nuxtjs/sitemap'],
   site: {
-    url: 'https://zearow.com',
+    url: 'https://zearow.com/',
     trailingSlash: true
   },
   css: ['~/assets/css/main.css'],
