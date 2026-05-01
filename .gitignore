@@ -30,3 +30,4 @@ logs
 /reference
 /screenshots
 /.playwright-mcp
+/scripts

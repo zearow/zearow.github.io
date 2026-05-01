@@ -52,7 +52,8 @@ useHead({
             name: 'zearøw',
             url: 'https://zearow.com/',
             logo: 'https://zearow.com/logo-graphite.svg',
-            description: 'Custom software solutions centered around people, processes, and technology.'
+            description: 'Custom software solutions centered around people, processes, and technology.',
+            sameAs: ['https://www.linkedin.com/company/zearow']
           },
           {
             '@type': 'WebSite',
@@ -118,6 +119,21 @@ onUnmounted(() => {
           class="-mx-2.5"
           :ui="{ link: 'text-base py-3' }"
         />
+        <USeparator class="my-4" />
+        <div class="flex items-center gap-3 py-3">
+          <span class="text-base text-(--ui-text-muted)">Find us on </span>
+          <UButton
+            to="https://www.linkedin.com/company/zearow"
+            target="_blank"
+            rel="noopener"
+            aria-label="zearøw on LinkedIn"
+            icon="i-simple-icons-linkedin"
+            color="neutral"
+            variant="link"
+            size="lg"
+            class="text-(--ui-text-muted) hover:!text-[#0A66C2] transition-colors"
+          />
+        </div>
       </template>
     </UHeader>
 
@@ -149,6 +165,17 @@ onUnmounted(() => {
           variant="link"
           class="hidden lg:flex"
           :ui="{ list: 'flex-nowrap justify-end gap-x-4 whitespace-nowrap' }"
+        />
+        <UButton
+          to="https://www.linkedin.com/company/zearow"
+          target="_blank"
+          rel="noopener"
+          aria-label="zearøw on LinkedIn"
+          icon="i-simple-icons-linkedin"
+          color="neutral"
+          variant="link"
+          size="md"
+          class="text-(--ui-text-muted) hover:!text-[#0A66C2] transition-colors"
         />
       </template>
     </UFooter>
